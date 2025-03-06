@@ -58,4 +58,9 @@ export class AuthService {
       token,
     };
   }
+
+
+  async getAllUsers() {
+    return await this.userRepository.find();
+  }
 }
